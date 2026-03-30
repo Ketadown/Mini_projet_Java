@@ -24,15 +24,15 @@ public class Main {
 
         ArrayList<Pneus> listePneus= new ArrayList<Pneus>();
 
-        // Ajout de pneus dans la class :
+        // Modification de la création des pneus avec l'héritage, ajout  marque et prix
 
         Scanner sc = new Scanner(System.in);
 
-        Pneus P1 = new Pneus("P1",13,22,c1);
-        Pneus P2 = new Pneus("P2",17,32,c1);
-        Pneus P3 = new Pneus("P3",11,23,c3);
-        Pneus P4 = new Pneus("P4",12,31,c4);
-        Pneus P5 = new Pneus("P5",19,12,c2);
+        Pneus P1 = new Pneus("Michelin",33,"P1",13,22,c1);
+        Pneus P2 = new Pneus("Continental",43,"P2",17,32,c1);
+        Pneus P3 = new Pneus("Continental",32,"P3",11,23,c3);
+        Pneus P4 = new Pneus("Viking",31,"P4",12,31,c4);
+        Pneus P5 = new Pneus("Michelin",44,"P5",19,12,c2);
 
         listePneus.add(P1);
         listePneus.add(P2);
@@ -50,6 +50,12 @@ public class Main {
             }
 
         }
+
+        //Test de l'héritage pour la class Pneus
+
+        System.out.println("La marque du pneu 1 est de : "+P1.marque);
+        System.out.println("Le prix du pneu 2 est de : "+P2.prix_ht+" €.");
+
 
     }
 }
