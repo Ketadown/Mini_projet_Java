@@ -9,7 +9,7 @@ Ci-dessous, vous trouvrez les compétences acquise et mise en vigueur à chaque 
 
   2e commit : (26/03/2026)
 
-  Modélisation de données (Classes Client et Pneus),
+  Modélisation de données (Classes Fabricant et Pneus),
   Gestion des associations entre objets (Un pneu appartient à un client),
   Stockage dynamique avec ArrayList,
   Mise en place d'une interface console interactive avec Scanner,
