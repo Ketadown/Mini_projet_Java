@@ -14,6 +14,16 @@ Ci-dessous, vous trouvrez les compétences acquise et mise en vigueur à chaque 
   Stockage dynamique avec ArrayList,
   Mise en place d'une interface console interactive avec Scanner,
   Logique de filtrage et recherche par attribut,
-  
 
+  3e commit : (30/03/2026)
   
+  Mise en place de l'héritage entre class (Classe Produits et classe Pneus), 
+  
+  4e commit : (30/03/2026)
+  
+  Implémentation de la saisie utilisateur via une boucle while,
+  Pour la logique de l'exo remplacemment de la Class Clients par la Class Fabricant,
+  Ajout de pneus en temps réel avec un fabricant en particulier et une saisie utilisateur,
+    
+  
+    
