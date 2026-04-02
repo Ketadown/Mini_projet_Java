@@ -1,18 +1,26 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class Main {
 
     static void main() {
 
-
         ArrayList<Fabricant> listeFabricants = new ArrayList<Fabricant>();
 
         //Ajout de plusieurs fabricants dans la class Fabricant :
+        //Ajout des fabricants dans la BD
 
         Fabricant c1 = new Fabricant(1, "Theam");
+        c1.sauvegarderEnBase();
         Fabricant c2 = new Fabricant(2, "Ali Hassan");
+        c2.sauvegarderEnBase();
         Fabricant c3 = new Fabricant(3, "Gong");
+        c3.sauvegarderEnBase();
         Fabricant c4 = new Fabricant(4, "Zaoui");
+        c4.sauvegarderEnBase();
 
 
         listeFabricants.add(c1);
@@ -29,7 +37,6 @@ public class Main {
             System.out.println(listeFabricants.get(i).nom);
 
         }
-
 
         ArrayList<Pneus> listePneus = new ArrayList<Pneus>();
 
@@ -115,8 +122,8 @@ public class Main {
             }
 
             System.out.println("Veuillez attribuer une ID_fabricant au pneu : ");
-            int id_client_saisie=sc.nextInt();
-            Fabricant fabricantChoisi = listeFabricants.get(id_client_saisie-1);
+            int id_fabricant_saisie=sc.nextInt();
+            Fabricant fabricantChoisi = listeFabricants.get(id_fabricant_saisie-1);
 
 
             Pneus p = new Pneus(marque_p, prix,type_p,largeur,diametre, fabricantChoisi);
@@ -131,9 +138,6 @@ public class Main {
             for (int i = 0; i < listePneus.size() ; i++) {
                 System.out.println(listePneus.get(i).type_pneus);
             }
-
-
-
 
 
         }}}

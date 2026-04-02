@@ -1,3 +1,9 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.*;
+
+
 public class Pneus extends Produits {
 
     String type_pneus;
@@ -23,6 +29,8 @@ public class Pneus extends Produits {
         this.LeFabricant=LeFabricant;
 
     }
+
+
 
 }
 
